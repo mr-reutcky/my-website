@@ -281,15 +281,26 @@ footer {
   height: 60px;
   line-height: 60px;
 
-  a {
-    font-size: 3rem;
-    color: #000;
-    transition: all 0.25s ease-in-out;
-  }
+  ul {
+    li {
+      display: inline;
 
-  a:hover {
-    color: #1f1f1f;
-    scale: 1.01;
+      a {
+        margin-top: 2px;
+        color: #fff;
+        font-size: 3rem;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out;
+      }
+
+      a:hover {
+        scale: 1.01;
+      }
+    }
+
+    li + li {
+      margin-left: 20px;
+    }
   }
 }
 
