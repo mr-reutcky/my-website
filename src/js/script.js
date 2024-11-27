@@ -8,6 +8,9 @@ function listen(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
 
+const hamburger = document.querySelector('.hamburger');
+const navUl = document.querySelector('nav ul');
+
 function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
   let paths = document.querySelectorAll("path");
   let mode=repeat?'infinite':'forwards'
@@ -23,3 +26,7 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
   }
 }
 setTextAnimation(0.1, 3.3, 0.2, 'ease-in-out', '#ffffff', false);
+
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('active');
+});
