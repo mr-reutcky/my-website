@@ -22,4 +22,4 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
       path.style["animation-delay"] = `${i * delay}s`;
   }
 }
-setTextAnimation(0.1, 3.3, 2, 'ease-in-out', '#ffffff', false);
+setTextAnimation(0.1, 3.3, 0.2, 'ease-in-out', '#ffffff', false);
